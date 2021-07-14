@@ -15,3 +15,6 @@ class Answer(models.Model):
     #외래키 제약조건 무시하고 연쇄 삭제 됨
     content = models.TextField()
     create_date = models.DateTimeField()
+
+    def __str__(self):
+        return str(self.question)
